@@ -78,18 +78,29 @@
     color:  #e5e7eb;
     border: none;
     border-radius: 10px;
+    margin: 18px 0;
     top: 40%;
     padding: 15px;
     min-height: 30px;
-    min-width: 120px;
+    min-width: 150px;
     font-size: 18px;
     font-weight: bold;
 }
 
-.hero-photo {
+.photo-container {
     margin: 1px;
     width: 800px;
     height: 300px;
+    overflow: hidden;
+    display: flex;
+}
+
+.hero-photo {
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
 }
 
 .info-container {
@@ -133,16 +144,27 @@
     height: 280px;
 }
 
+.photo-grid-container {
+    margin: 1px;
+    width: 200px;
+    height: 210px;
+    display: flex;
+}
+
 .photo-item {
     border: 5px solid #1f2937;
     border-radius: 20px;
-    width: 200px;
-    height: 210px;
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
 }
 
 .photo-text {
     text-align: center;
     font-size: 18px;
+    padding: 18px;
 }
 
 .quote-container {
